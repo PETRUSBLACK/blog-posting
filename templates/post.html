@@ -20,16 +20,13 @@
     <div>
         <h1>Tomi's Blog</h1>
     </div>
-    {% for post in posts reversed %}
     <div class="card" >
-        <a href="{% url 'postes' {{post.id}} %}" style="text-decoration: none; color: black;">
-            <h4>{{post.title}}</h4>
-            <h5>{{post.created_at}}</h5>
-            <p>{{post.body | truncatewords:10}}</p>
+        <a href="#" style="text-decoration: none; color: black;">
+            <h4>{{posts.title}}</h4>
+            <h5>{{posts.created_at}}</h5>
+            <p>{{posts.body}}</p>
         </a> 
     </div>
-    {% endfor %}
-
     
 </body>
 </html>
